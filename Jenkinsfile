@@ -1,10 +1,5 @@
 pipeline {
-        agent {
-                node {
-                      label 'built-in'
-                      customWorkspace '/home/ec2-user/gitdir'
-    }
-  } 
+        agent any 
         stages {
         stage('Git Fetch') {
             steps {
